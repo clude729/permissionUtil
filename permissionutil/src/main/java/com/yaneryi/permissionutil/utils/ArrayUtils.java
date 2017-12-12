@@ -1,4 +1,4 @@
-package com.yaneryi.permissionutil;
+package com.yaneryi.permissionutil.utils;
 
 import java.util.Collection;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.Map;
  * Created by clude on 2017/11/28.
  */
 
-public class ArrayUtils {
+public final class ArrayUtils {
 
     /**
      * 私有构造方法

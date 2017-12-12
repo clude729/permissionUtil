@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PermissionUtil</string>
+    <string name="oper_confirm">确认</string>
+    <string name="oper_ok">好的</string>
+    <string name="oper_cancel">取消</string>
+    <plurals name="open_permission_guide">
+        <item quantity="one">此功能需要启用以下权限，转到设置并启用它？</item>
+        <item quantity="zero">此功能需要启用以下权限，转到设置并启用它们？</item>
+        <item quantity="two">此功能需要启用以下权限，转到设置并启用它们？</item>
+        <item quantity="few">此功能需要启用以下权限，转到设置并启用它们？</item>
+        <item quantity="many">此功能需要启用以下权限，转到设置并启用它们？</item>
+        <item quantity="other">此功能需要启用以下权限，转到设置并启用它们？</item>
+    </plurals>
 </resources>
