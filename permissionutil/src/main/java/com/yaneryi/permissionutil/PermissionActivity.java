@@ -46,7 +46,7 @@ public class PermissionActivity extends Activity {
      */
     private static final String EXTRA_PERMISSION_EXPLAIN_MSG = "explain_message";
 
-    private static final Set<String> NOT_IMPORTANT_PERMISSIONS = new HashSet<String>(2);
+    private static final Set<String> NOT_IMPORTANT_PERMISSIONS = new HashSet<>(2);
 
     static {
         NOT_IMPORTANT_PERMISSIONS.add(Manifest.permission.ACCESS_COARSE_LOCATION);
@@ -203,15 +203,6 @@ public class PermissionActivity extends Activity {
                 dialog.setOnDismissListener(null);
                 gotoPermissionSettings(requestCode);
             }
-
-            public void onNeutral(){
-
-            }
-
-            public void onNegative(){
-
-            }
-
         });
         dialog.setOnDismissListener(new OnDialogDismissListener() {
             @Override
@@ -230,7 +221,7 @@ public class PermissionActivity extends Activity {
             return permissions;
         }
         int len = permissions.length;
-        List<String> result = new ArrayList<String>(len);
+        List<String> result = new ArrayList<>(len);
         for (int i = 0; i < len; i++) {
             if (grantResults[i] != PackageManager.PERMISSION_GRANTED) {
                 result.add(permissions[i]);
